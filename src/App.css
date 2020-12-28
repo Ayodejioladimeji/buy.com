@@ -1,8 +1,8 @@
 :root{
-  --mainBlue:#2a3a72;
+  --mainBlue:red;
   --lightBlue:#009ffd;
   --mainWhite:#f3f3f3;
-  --mainDark:#232528;
+  --mainDark:maroon;
   --mainYellow:#ffa400;
   --style:#00ff00;
 }
@@ -14,7 +14,7 @@ body{
 }
 
 .text-title{
-  font-family: 'Permanent Marker', cursive;
+  font-family: cursive;
   letter-spacing:0.3rem;
   text-transform:uppercase;
 }
@@ -28,16 +28,18 @@ body{
 }
 
 .btn-black{
-  background:transparent;
+  background:var(--mainDark)!important;
   text-transform: capitalize;
-  font-size:0.8rem !important;
-  color:var(--mainDark);
+  font-size:1rem !important;
+  color:var(--mainWhite)!important;
   border-radius:0 !important;
-  border:0.1rem solid var(--mainDark)!important;
+  border:0.1rem solid var(--mainWhite)!important;
+  border-radius:30rem!important;
+  font-weight:bold!important;
 }
 
 .btn-black:hover{
-  background:var(--mainDark)!important;
+  background:var(--mainBlue)!important;
   color:var(--mainWhite)!important;
 }
 
@@ -45,4 +47,27 @@ body{
   cursor:pointer;
   font-size:1.2rem;
   color:var(--mainYellow);
+}
+
+.bag{
+  font-size:2rem;
+}
+
+.length{
+  background:var(--mainDark);
+  color:var(--mainWhite);
+  border-radius:10rem;
+  padding:4px 8px;
+  font-size:10px;
+  position:absolute;
+  font-weight:bold;
+}
+
+.footer{
+  background:var(--mainBlue);
+  color:var(--mainWhite);
+}
+
+.my-cart{
+  padding-top:50px!important;
 }

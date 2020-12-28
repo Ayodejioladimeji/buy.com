@@ -16,12 +16,12 @@ export default class Cart extends Component {
                         const {cart} = value;
                         if(cart.length>0){
                             return(
-                                <>
-                                    <Title name="Your" title="cart"/>
+                                <div className="mt-5">
+                                    <Title name="My" title="cart"/>
                                     <CartColums/>
                                     <CartList value={value}/>
                                     <CartTotals value={value}/>
-                                </>
+                                </div>
                             )
                         }
                         else{

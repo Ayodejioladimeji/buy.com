@@ -25,13 +25,13 @@ export default class Modal extends Component {
                                             <h5>{title}</h5>
                                             <h5 className="text-muted">price : ₦ {price}</h5>
                                             <Link to="/">
-                                                <ButtonContainer shop onClick={()=>closeModal()}>
+                                                <ButtonContainer shop onClick={()=>closeModal()} style={{padding:8}}>
                                                     continue
                                                 </ButtonContainer>
                                             </Link>
 
                                             <Link to="/cart">
-                                                <ButtonContainer cart onClick={()=>closeModal()}>
+                                                <ButtonContainer cart onClick={()=>closeModal()} style={{padding:8}}>
                                                     go to cart
                                                 </ButtonContainer>
                                             </Link>

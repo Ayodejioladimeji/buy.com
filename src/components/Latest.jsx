@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import { ProductConsumer } from '../Context'
 
 
-export default class Product extends Component {
+export default class Latest extends Component {
     render() {
         const {id, title, img, price, inCart } = this.props.product;
         return (
@@ -43,7 +43,7 @@ export default class Product extends Component {
 }
 
 
-Product.propTypes = {
+Latest.propTypes = {
     product:PropTypes.shape({
         id:PropTypes.number,
         img:PropTypes.string,
