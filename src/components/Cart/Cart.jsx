@@ -5,12 +5,14 @@ import CartColums from './CartColums'
 import CartList from './CartList'
 import EmptyCart from './EmptyCart'
 import CartTotals from './CartTotals'
+import SEO from '../SEO'
 
 
 export default class Cart extends Component {
     render() {
         return (
             <section>
+                <SEO title="Cart"/>
                 <ProductConsumer>
                     {value=>{
                         const {cart} = value;
