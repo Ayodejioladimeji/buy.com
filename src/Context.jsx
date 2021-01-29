@@ -200,12 +200,23 @@ class ProductProvider extends Component {
             }
         })
     }
+    
     render() {
         return (
             <ProductContext.Provider 
-            value={{...this.state, handleDetail:this.handleDetail, addToCart:this.addToCart, openModal:this.openModal, closeModal:this.closeModal, increment:this.increment, decrement:this.decrement, removeItem:this.removeItem, clearCart:this.clearCart}}>
+                value={{...this.state,
+                handleDetail:this.handleDetail, 
+                addToCart:this.addToCart, 
+                openModal:this.openModal, 
+                closeModal:this.closeModal, 
+                increment:this.increment, 
+                decrement:this.decrement, 
+                removeItem:this.removeItem, 
+                clearCart:this.clearCart
+                }}
+            >
 
-                {this.props.children}
+            {this.props.children}
             </ProductContext.Provider>
         )
     }

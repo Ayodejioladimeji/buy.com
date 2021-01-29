@@ -30,8 +30,8 @@ export default class Latest extends Component {
 
                     {/* card footer */}
                     <div className="card-footer d-flex justify-content-between">
-                        <p className="align-self-center mb-0">{title}</p>
-                        <h5 className="text-blue font-italic mb-0">
+                        <p className="align-self-center mb-0 foot">{title}</p>
+                        <h5 className="text-blue font-italic mb-0 foot">
                             <span className="mr-1">₦</span>
                             {price}
                         </h5>
@@ -118,6 +118,10 @@ const ProductWrapper = styled.div
 .cart-btn:hover{
     color:var(--style );
     cursor:pointer;
+}
+
+.foot{
+    font-size:1rem;
 }
 
 `

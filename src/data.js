@@ -40,7 +40,7 @@ export const storeProducts = [
   },
   {
     id: 4,
-    title: "Oppo A93 Dual SIM",
+    title: "Oppo A93",
     img: "img/product-4.png",
     price: 129900,
     company: "Oppo",
@@ -51,7 +51,7 @@ export const storeProducts = [
   },
   {
     id: 5,
-    title: "Oppo A93 8GB RAM",
+    title: "Oppo A93 8GB",
     img: "https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/78/590776/1.jpg?3777",
     price: 90000,
     company: "Oppo",

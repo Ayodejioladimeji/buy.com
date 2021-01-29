@@ -22,7 +22,7 @@ export default class Cart extends Component {
                                     <Title name="My" title="cart"/>
                                     <CartColums/>
                                     <CartList value={value}/>
-                                    <CartTotals value={value}/>
+                                    <CartTotals value={value} history={this.props.history}/>
                                 </div>
                             )
                         }

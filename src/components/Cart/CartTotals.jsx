@@ -1,7 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import PayPalButton from './PayPalButton'
 
-const CartTotals = ({value}) => {
+const CartTotals = ({value,history}) => {
     const {cartSubtotal, cartTotal, clearCart} = value;
     return (
         <>
@@ -14,7 +15,7 @@ const CartTotals = ({value}) => {
 
                         <h5>
                             <span className="text-title">subtotal :</span>
-                            ₦ <strong>{cartSubtotal}</strong>
+                            ₦ <strong>{cartSubtotal.toLocaleString()}</strong>
                         </h5>
                         
                         {/* <h5>
@@ -24,8 +25,9 @@ const CartTotals = ({value}) => {
 
                         <h5>
                             <span className="text-title">total : </span>
-                            ₦ <strong>{cartTotal}</strong>
-                        </h5>
+                            ₦ <strong>{cartTotal.toLocaleString()}</strong>
+                        </h5> 
+                        <PayPalButton total={cartTotal} clearCart={clearCart} history={history}/>
                     </div>
                 </div>
             </div>
